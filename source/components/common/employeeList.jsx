@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Row, Col } from 'react-bootstrap';
 
 import EmployeeItem from './employeeItem.jsx';
+import EmployeeAdd from '../../containers/employeeAdd.js';
 
 const EmployeeList = ({ employees }) => (
   <Row>
@@ -11,6 +12,9 @@ const EmployeeList = ({ employees }) => (
         <EmployeeItem item={employee} />
       </Col>
     )}
+    <Col xs={12} sm={6} md={6}>
+      <EmployeeAdd />
+    </Col>
   </Row>
 );
 

@@ -23,6 +23,10 @@
     &.shareholder {
       border-color: $shareholder;
     }
+    &.add {
+      border-color: grey;
+      cursor: pointer;
+    }
   }
 
   .content {
