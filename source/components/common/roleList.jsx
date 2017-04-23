@@ -1,20 +1,23 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
+import './roleList.scss';
 
 const RoleList = ({ onHandleChange, roles, activeRoles }) => (
   <div>
     {roles.map((role) => {
       const active = activeRoles.indexOf(role) > -1;
-
+      const buttonCss = `role-button ${role.toLowerCase()}`;
       return (
-        <Button
-          onClick={() => onHandleChange(role, active)}
-          key={role}
-          active={active}
-        >
-          {role}
-        </Button>
+        <div className="role" key={role}>
+          <Button
+            className={buttonCss}
+            onClick={() => onHandleChange(role, active)}
+            active={active}
+          >
+            {role}
+          </Button>
+        </div>
       );
     })}
   </div>

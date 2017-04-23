@@ -1,0 +1,19 @@
+@mixin button-color($color, $hovercolor) {
+  border-color: $color;
+  outline: none;
+  &:hover {
+    background-color: $hovercolor;
+    border-color: $color;
+    outline: none;
+  }
+  &:active {
+    background-color: $color;
+    border-color: $color;
+    outline: none;
+  }
+  &.active {
+    background-color: $color;
+    border-color: $color;
+    outline: none;
+  }
+}

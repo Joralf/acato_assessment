@@ -1,16 +1,13 @@
 .app {
   .navbar {
-    margin-bottom: 0px; 
+    margin-bottom: 0px;
     border-radius: 0px;
   }
 
   .content {
     overflow: scroll;
-    .filter-container {
-      padding: 20px 10px;
-    }
     .results-container {
-      padding: 20px 10px;
+      margin-top: 5px;
     }
   }
 }

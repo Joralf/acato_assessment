@@ -3,18 +3,26 @@ import PropTypes from 'prop-types';
 
 import ProfilePicture from '../../../assets/profile_picture.png';
 
+import '../../../assets/css/common.scss';
 import './employeeItem.scss';
 
-const EmployeeItem = ({ item, color }) => (
-  <div className="card" style={{'backgroundColor': color}}>
-    <img className="avatar" src={ProfilePicture} alt="profile_picture" />
-    <div className="content">
-      <h4>{item.name}</h4>
-      <div>Role: {item.role}</div>
-      <div>Quote: {item.quote}</div>
+const EmployeeItem = ({ item }) => {
+  const avatarCss = `avatar ${item.role.toLowerCase()}`;
+  return (
+    <div className="employee-card card clickable">
+      <img
+        src={ProfilePicture}
+        className={avatarCss}
+        alt="profile_picture"
+      />
+      <div className="content">
+        <h4>{item.name}</h4>
+        <div>Role: {item.role}</div>
+        <div>Quote: {item.quote}</div>
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 EmployeeItem.propTypes = {
   item: PropTypes.shape({
@@ -22,7 +30,6 @@ EmployeeItem.propTypes = {
     role: PropTypes.string.isRequired,
     quote: PropTypes.string.isRequired,
   }).isRequired,
-  color: PropTypes.string.isRequired
 };
 
 export default EmployeeItem;

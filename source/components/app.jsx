@@ -6,6 +6,7 @@ import NameFilter from '../containers/nameFilter.js';
 import RoleFilter from '../containers/roleFilter.js';
 
 import Logo from '../../assets/logo.svg';
+import '../../assets/css/common.scss';
 import './app.scss';
 
 const App = () => (
@@ -29,14 +30,18 @@ const App = () => (
     </Navbar>
     <Grid className="content">
       <Row>
-        <Col xs={12} sm={12} md={3} className="filter-container">
-          <h3>Filter by name:</h3>
-          <NameFilter />
-          <h3>Filter by role:</h3>
-          <RoleFilter />
+        <Col xs={12} sm={12} md={3}>
+          <div className="card">
+            <h4>Who are you looking for?</h4>
+            <NameFilter />
+            <h4>Interested in specific roles?</h4>
+            <RoleFilter />
+          </div>
         </Col>
-        <Col xs={12} sm={12} md={9} className="results-container">
-          <EmployeesContainer />
+        <Col xs={12} sm={12} md={9}>
+          <div className="results-container">
+            <EmployeesContainer />
+          </div>
         </Col>
       </Row>
     </Grid>

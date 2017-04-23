@@ -16,8 +16,23 @@ export default {
   },
   {
     name: 'Dagobert Duck',
-    role: 'Director',
+    role: 'Shareholder',
     quote: 'Bring me the money!',
-  }
-],
+  },
+  {
+    name: 'R2D2',
+    role: 'Developer',
+    quote: 'Beep! Beep! Beep!',
+  },
+  {
+    name: 'Piet Mondriaan',
+    role: 'Designer',
+    quote: 'Lines and colors people!',
+  },
+  {
+    name: 'Bob Ross',
+    role: 'Designer',
+    quote: 'I like to beat the brush...',
+  },
+  ],
 };
