@@ -1,6 +1,6 @@
-# Acato Front-End Assessment #
+# Front-End Assessment #
 
-This Single Page Application is build for the Acato Assessment. It can be used to view employees and add employees via a form. It has some minor form validation on the add employees form and employees can be filtered by name and/or role.
+This Single Page Application is build for an Assessment. It can be used to view employees and add employees via a form. It has some minor form validation on the add employees form and employees can be filtered by name and/or role.
 
 ## Overview Of Activities ##
 
