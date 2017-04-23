@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import EmployeeList from '../components/common/employeeList.jsx';
+import EmployeeList from '../components/employee/employeeList.jsx';
 
 import { applySearchFilter, applyRoleFilter } from '../helpers/employeeFilters.js';
 

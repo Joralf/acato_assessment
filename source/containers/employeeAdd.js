@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { addEmployee } from '../actions/employee.js';
-import employeeForm from '../components/common/employeeForm.jsx';
+import employeeForm from '../components/employee/employeeForm.jsx';
 
 const mapStateToProps = () => ({});
 

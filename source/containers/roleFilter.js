@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { addFilterByRole, removeFilterByRole } from '../actions/filter.js';
-import RoleList from '../components/common/roleList.jsx';
+import RoleList from '../components/roles/roleList.jsx';
 
 const mapStateToProps = state => ({
   roles: [...new Set(state.employees.employees.map(employee => employee.role))],
