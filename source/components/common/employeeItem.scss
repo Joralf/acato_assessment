@@ -1,7 +1,7 @@
 .card {
-  height: 150px;
+  height: 120px;
   margin: 5px 0px;
-  padding: 5px 10px;
+  padding: 10px 10px;
   overflow-y: hidden;
 
   cursor: pointer;
@@ -15,4 +15,14 @@
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
+}
+
+.avatar {
+  float: left;
+  border-radius: 4px;
+}
+
+.content {
+  line-height: 18px;
+  padding: 10px 15px;
 }
